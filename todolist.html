@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="todo.png" size="16x16">
+
+    <!-- Font Awesome kit link -->
+    <script src="https://kit.fontawesome.com/28a02cc159.js" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>TODOs List</title>
+    <style>
+        table tr th , table td{
+            border: 1px solid #343A40;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: #8f4a1c6b;">
+    <div class="container my-4">
+        <h2 class="text-center display-4"><i class="fas fa-tasks"></i>&nbsp;TODO's List</h2>
+
+            <div class="form-group">
+                <label for="title" class="font-weight-bold">Title</label>
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Add an item to the list</small>
+            </div>
+
+            <div class="form-group">
+                <label for="description" class="font-weight-bold">Description</label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+
+
+            <button   id="add" class="btn btn-primary col-2">Add to list</button>
+            <button  id="clear" class="btn btn-danger" onclick="clearStorage()">Clear list</button>
+
+
+        <div id="items" class="my-4">
+            <h2>Your Items</h2>
+            <table id="showList" class="table border border-dark">
+                <thead class="bg-dark text-light">
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Item Title</th>
+                    <th scope="col">Item Description</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+
+
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
